@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Categoria {% endblock %}
+
+{% block content %}
+    <section class="section-content">
+        <div class="container">
+            <h3>Categoria</h3>
+            <br>
+            <p><a href="{% url 'product:category-create' %}">Nova Categoria</a></p>
+
+            <table class="table table_bordered">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Ação</th>
+                </tr>
+
+               
+            </table>
+        </div>
+    </section>
+{% endblock %}
